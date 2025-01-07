@@ -1,0 +1,31 @@
+# install: conda env create -f workbench.yaml 
+# activate environment: conda activate workbench 
+name: workbench 
+channels: 
+    - pytorch 
+    - conda-forge 
+    - defaults
+dependencies: 
+    # current stable version of python - pick the stable version that supports pytorch 
+    - python=3.12 
+    # base scientific computing and machine learning libraries and packages 
+    - numpy 
+    - pandas 
+    - scikit-learn 
+    - scipy 
+    - matplotlib 
+    - seaborn 
+    - jupyter 
+    # pytorch libraries 
+    - pytorch 
+    - torchvision 
+    # probabilistic modeling and machine learning libraries + packages 
+    # visualization libraries + packages 
+    - altair 
+    # python libraries + packages 
+    - tqdm 
+    - rich
+    - pytest
+    # libraries and packages to install with pip (pip only libraries + packages)
+    # - pip:
+    
