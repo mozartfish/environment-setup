@@ -1,3 +1,4 @@
+# uninstall: conda remove --name workbench --all
 # install: conda env create -f workbench.yaml 
 # activate environment: conda activate workbench 
 name: workbench 
@@ -8,24 +9,28 @@ channels:
 dependencies: 
     # current stable version of python - pick the stable version that supports pytorch 
     - python=3.12 
-    # base scientific computing and machine learning libraries and packages 
+    # base scientific computing and machine learning libraries + packages 
     - numpy 
     - pandas 
     - scikit-learn 
+    - scikit-image 
     - scipy 
     - matplotlib 
     - seaborn 
     - jupyter 
+    - networkx 
     # pytorch libraries 
     - pytorch 
-    - torchvision 
+    - torchvision
     # probabilistic modeling and machine learning libraries + packages 
+    - cmdstanpy 
     # visualization libraries + packages 
-    - altair 
+    - altair
     # python libraries + packages 
     - tqdm 
     - rich
     - pytest
     # libraries and packages to install with pip (pip only libraries + packages)
-    # - pip:
+    - pip:
+        - pymc 
     
