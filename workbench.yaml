@@ -29,7 +29,8 @@ dependencies:
     # python libraries + packages 
     - tqdm 
     - rich
-    - pytest
+    - pytest # unit testing in python 
+    - nbconvert # package needed for exporting jupyter notebooks to pdf 
     # libraries and packages to install with pip (pip only libraries + packages)
     - pip:
         - pymc 
