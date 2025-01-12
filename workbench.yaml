@@ -22,8 +22,6 @@ dependencies:
     # pytorch libraries 
     - pytorch 
     - torchvision
-    # probabilistic modeling and machine learning libraries + packages 
-    - cmdstanpy 
     # visualization libraries + packages 
     - altair
     # python libraries + packages 
@@ -33,5 +31,6 @@ dependencies:
     - nbconvert # package needed for exporting jupyter notebooks to pdf 
     # libraries and packages to install with pip (pip only libraries + packages)
     - pip:
+        # bayesian modeling and probabilistic programming 
         - pymc 
     
