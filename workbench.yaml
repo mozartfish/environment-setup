@@ -29,6 +29,7 @@ dependencies:
     - rich
     - pytest # unit testing in python 
     - nbconvert # package needed for exporting jupyter notebooks to pdf 
+    - openpyxl # for opening excel files in pandas
     # libraries and packages to install with pip (pip only libraries + packages)
     - pip:
         # bayesian modeling and probabilistic programming 
