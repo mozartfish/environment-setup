@@ -1,6 +1,8 @@
 # uninstall: conda remove --name workbench --all
 # install: conda env create -f workbench.yaml 
 # activate environment: conda activate workbench 
+# update packages: conda update --all 
+# cleanup unused packages: conda clean --all
 name: workbench 
 channels: 
     - pytorch 
