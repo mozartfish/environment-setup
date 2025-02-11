@@ -8,7 +8,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # current stable version of python - pick the stable version that supports pytorch
+  # current stable version of python - pick the stable version that supports pytorch + torchvision 
   - python=3.12
   # base scientific computing and machine learning libraries + packages
   - numpy
