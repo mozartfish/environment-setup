@@ -3,37 +3,33 @@
 # activate environment: conda activate workbench 
 # update packages: conda update --all 
 # cleanup unused packages: conda clean --all
-name: workbench 
-channels: 
-    - pytorch 
-    - conda-forge 
-    - defaults
-dependencies: 
-    # current stable version of python - pick the stable version that supports pytorch 
-    - python=3.12 
-    # base scientific computing and machine learning libraries + packages 
-    - numpy 
-    - pandas 
-    - scikit-learn 
-    - scikit-image 
-    - scipy 
-    - matplotlib 
-    - seaborn 
-    - jupyter 
-    - networkx 
-    # pytorch libraries 
-    - pytorch 
+name: workbench
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # current stable version of python - pick the stable version that supports pytorch
+  - python=3.12
+  # base scientific computing and machine learning libraries + packages
+  - numpy
+  - pandas
+  - scikit-learn
+  - scikit-image
+  - scipy
+  - matplotlib
+  - seaborn
+  - jupyter
+  - networkx
+  # visualization libraries + packages
+  - altair
+  # python libraries + packages
+  - tqdm
+  - rich
+  - pytest  # unit testing in python
+  - nbconvert  # package needed for exporting jupyter notebooks to pdf
+  - openpyxl  # for opening excel files in pandas
+  - pip
+  - pip:
+    - torch
     - torchvision
-    # visualization libraries + packages 
-    - altair
-    # python libraries + packages 
-    - tqdm 
-    - rich
-    - pytest # unit testing in python 
-    - nbconvert # package needed for exporting jupyter notebooks to pdf 
-    - openpyxl # for opening excel files in pandas
-    # libraries and packages to install with pip (pip only libraries + packages)
-    - pip:
-        # bayesian modeling and probabilistic programming 
-        - pymc 
-    
+    - pymc
