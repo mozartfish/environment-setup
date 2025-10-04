@@ -9,7 +9,7 @@ channels:
   - defaults
 dependencies:
   # current stable version of python - pick the stable version that supports pytorch + torchvision 
-  - python=3.12
+  - python=3.11
   # base scientific computing and machine learning libraries + packages
   - numpy
   - pandas
@@ -32,4 +32,6 @@ dependencies:
   - pip:
     - torch
     - torchvision
+    - torchtext 
     - pymc
+    - nltk 
